@@ -3,9 +3,6 @@
 
 #pragma once
 
-// Minimal BT‑clear key on the Media layer
-#define MIRYOKU_KLUDGE_LAYERS \
-  X(Media)
-
-#define MIRYOKU_LAYER_MEDIA \
-  &bt BT_CLR
+// Add a Media layer with BT_CLR; no multi‑line macros
+#define MIRYOKU_KLUDGE_LAYERS X(Media)
+#define MIRYOKU_LAYER_MEDIA    &bt BT_CLR
